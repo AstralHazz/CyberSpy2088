@@ -8,6 +8,8 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource BGM;
 
+    public AudioSource[] SFXs;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -15,9 +17,11 @@ public class AudioManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void PlayerSFX(int sfxNumber)
     {
-        
+        SFXs[sfxNumber].Stop();
+        SFXs[sfxNumber].Play();
+
     }
 
     public void StopBackgroundMusic()

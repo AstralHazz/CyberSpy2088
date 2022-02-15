@@ -4,23 +4,13 @@ using UnityEngine;
 
 public class AmmoPickup : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             other.GetComponentInChildren<GunSystem>().AddAmmo();
+
+            AudioManager.instance.PlayerSFX(0);
             Destroy(gameObject);
         }
     }

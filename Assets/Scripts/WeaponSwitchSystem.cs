@@ -44,6 +44,7 @@ public class WeaponSwitchSystem : MonoBehaviour
 
         activeGun = allGuns[currentGunNumber];
         activeGun.gameObject.SetActive(true);
+        AudioManager.instance.PlayerSFX(6);
     }
 
     public void AddGun(string gunName)

@@ -29,8 +29,10 @@ public class PlayerHealthSystem : MonoBehaviour
 
         healthBar.SetHealth(currentHealth);
 
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
+            AudioManager.instance.PlayerSFX(3);
+
             gameObject.SetActive(false);
 
             AudioManager.instance.StopBackgroundMusic();
@@ -38,6 +40,8 @@ public class PlayerHealthSystem : MonoBehaviour
             Instantiate(deathEffect, transform.position, transform.localRotation);
             FindObjectOfType<GameManager>().PlayerRespawn();
         }
+
+        AudioManager.instance.PlayerSFX(4);
     }
 
     public void HealPlayer(int healFactor)

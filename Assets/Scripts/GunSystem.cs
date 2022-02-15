@@ -117,6 +117,8 @@ public class GunSystem : MonoBehaviour
     {
         myAnimator.SetTrigger(gunAnimationName);
 
+        AudioManager.instance.PlayerSFX(7);
+
         isReloading = true;
         StartCoroutine(Reloading());
     }
