@@ -1,0 +1,402 @@
+Using pre-set license
+Built from '2021.2/staging' branch; Version is '2021.2.8f1 (d0e5f0a7b06a) revision 13690352'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19043) 64bit Core' Language: 'en' Physical Memory: 32631 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.2.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+F:/Classes/Spring 2022/Game Design Studio 2/Tutorials/Skillshare/CyberSpy2088
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58198
+Successfully changed project path to: F:/Classes/Spring 2022/Game Design Studio 2/Tutorials/Skillshare/CyberSpy2088
+F:/Classes/Spring 2022/Game Design Studio 2/Tutorials/Skillshare/CyberSpy2088
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 30.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.8f1 (d0e5f0a7b06a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/Classes/Spring 2022/Game Design Studio 2/Tutorials/Skillshare/CyberSpy2088/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Vendor:   NVIDIA
+    VRAM:     8079 MB
+    Driver:   30.0.14.9709
+Assertion failed on expression: 'serializedObjects.size() == 1'
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56852
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010022 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 29.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.546 seconds
+Domain Reload Profiling:
+	ReloadAssembly (546ms)
+		BeginReloadAssembly (76ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (383ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (98ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (215ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (29ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (121ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003842 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.782 seconds
+Domain Reload Profiling:
+	ReloadAssembly (783ms)
+		BeginReloadAssembly (103ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (591ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (170ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (285ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (181ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1810 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 36 unused Assets / (1.3 MB). Loaded Objects now: 2278.
+Memory consumption went from 162.3 MB to 161.0 MB.
+Total: 2.573700 ms (FindLiveObjects: 0.165500 ms CreateObjectMapping: 0.084800 ms MarkObjects: 2.050700 ms  DeleteObjects: 0.271500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 11201.481364 seconds.
+  path: Assets/Game Assets
+  artifactKey: Guid(8da50d8adccdcd14ea96bdd696f80da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets using Guid(8da50d8adccdcd14ea96bdd696f80da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c33381d7430c8b83fcce0ab2ff7031e') in 0.037810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.339875 seconds.
+  path: Assets/Game Assets/Pickups
+  artifactKey: Guid(4f4ca4c6b69b15240a1a38cbb5b35dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Pickups using Guid(4f4ca4c6b69b15240a1a38cbb5b35dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8498df7e88642dce850a865d77b11d4') in 0.036488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.604731 seconds.
+  path: Assets/Game Assets/Pickups/Ammo box
+  artifactKey: Guid(7f35c4af4a0ee8e43a4fe6ff69fbd6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Pickups/Ammo box using Guid(7f35c4af4a0ee8e43a4fe6ff69fbd6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40597a4410ca394db30046de1581624b') in 0.036392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.592588 seconds.
+  path: Assets/Game Assets/Pickups/Ammo box/source
+  artifactKey: Guid(0bec9adcacca71141a499f8db78c0234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Pickups/Ammo box/source using Guid(0bec9adcacca71141a499f8db78c0234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c287e0e4d0b35bea0a597916f852e395') in 0.036266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.760750 seconds.
+  path: Assets/Game Assets/Pickups/Ammo box/source/ammobox
+  artifactKey: Guid(490d1bdc133ca814984781abcd0001e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Pickups/Ammo box/source/ammobox using Guid(490d1bdc133ca814984781abcd0001e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f238f089e6cd813731f35743cc209def') in 0.035886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.040103 seconds.
+  path: Assets/Game Assets/Pickups/Ammo box/source/ammobox/ammobox.fbx
+  artifactKey: Guid(e52d0537f8e96c947841e8697a223bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Pickups/Ammo box/source/ammobox/ammobox.fbx using Guid(e52d0537f8e96c947841e8697a223bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f82268f0dca3e27d70df3657afe8b8f') in 0.293625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Game Assets/Pickups/Ammo box/source/ammobox/ammobox_DefaultMaterial_Roughness.png
+  artifactKey: Guid(070654a0fc0ac79419a67245bc84e5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Pickups/Ammo box/source/ammobox/ammobox_DefaultMaterial_Roughness.png using Guid(070654a0fc0ac79419a67245bc84e5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cda59f0438ba06626e720b5ea3a5b44') in 0.167904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Game Assets/Pickups/Ammo box/source/ammobox/ammobox_DefaultMaterial_Metallic.png
+  artifactKey: Guid(aa27314d4563ecb4c9d75e088828ce19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Pickups/Ammo box/source/ammobox/ammobox_DefaultMaterial_Metallic.png using Guid(aa27314d4563ecb4c9d75e088828ce19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfec79cc757e60d9a1c4c7c27e615fa2') in 0.114856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 466.170861 seconds.
+  path: Assets/Game Assets/Pickups/First aid box/textures/FirstAid_N.tga.png
+  artifactKey: Guid(34155894931ba7d4da8ce410d6a58dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Pickups/First aid box/textures/FirstAid_N.tga.png using Guid(34155894931ba7d4da8ce410d6a58dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5591bd0c9682c7974c2ee2da357a25a4') in 0.151686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Game Assets/Pickups/First aid box/textures/FirstAid_R.tga.png
+  artifactKey: Guid(3f4832be537537147ab974ad33f86769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Pickups/First aid box/textures/FirstAid_R.tga.png using Guid(3f4832be537537147ab974ad33f86769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17bd9cc96a7ef7cb7406bda195c1a74d') in 0.075036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 79.115173 seconds.
+  path: Assets/Game Assets/EffectExamples/Misc Effects/Textures/DustMote.png
+  artifactKey: Guid(394e93ce356b57344903a08ff72fcab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Misc Effects/Textures/DustMote.png using Guid(394e93ce356b57344903a08ff72fcab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e339fc0759d79687c6f43796d7e1e502') in 0.174542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Game Assets/EffectExamples/Fire & Explosion Effects/Textures/Flame04.tif
+  artifactKey: Guid(8e06c9c1eb329314682fc3690cda8b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Fire & Explosion Effects/Textures/Flame04.tif using Guid(8e06c9c1eb329314682fc3690cda8b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f563fc6a303109af50815c5c0e9d7ec2') in 0.412564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Game Assets/Sci-Fi Weapons/Base Pack/Heavy/Textures/Variation 08/Heavy_08_Metallic.png
+  artifactKey: Guid(90fc5e61192a0a94f92c54d68e536481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Sci-Fi Weapons/Base Pack/Heavy/Textures/Variation 08/Heavy_08_Metallic.png using Guid(90fc5e61192a0a94f92c54d68e536481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f01e7adf610ac2e08d73a878d071ee4') in 0.145463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Game Assets/EffectExamples/Magic Effects/Textures/EarthCrackAlbedo.tif
+  artifactKey: Guid(8127d72dd65a1454082d10767b2fcad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Magic Effects/Textures/EarthCrackAlbedo.tif using Guid(8127d72dd65a1454082d10767b2fcad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50ec84085bf9d53313767e349dadc9fc') in 0.300665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Shared/Environment/Textures/ConcreteWall_MetallicSmooth.tif
+  artifactKey: Guid(1ab99eedfaf93af4e85990b5a98ffb96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shared/Environment/Textures/ConcreteWall_MetallicSmooth.tif using Guid(1ab99eedfaf93af4e85990b5a98ffb96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7842889fc2ff8084445411a2dcb4fe92') in 0.272185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/UI/Border.png
+  artifactKey: Guid(a0616fd69b3065c4985056d775219ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Border.png using Guid(a0616fd69b3065c4985056d775219ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe66d9600ffabab43715d450e5137bfd') in 0.152343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Game Assets/True_Horror_Creatures/Environment/Textures/Catacombs.png
+  artifactKey: Guid(921e4c8e07210c7448fbfdb8127db7a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/True_Horror_Creatures/Environment/Textures/Catacombs.png using Guid(921e4c8e07210c7448fbfdb8127db7a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a74a3384a4e094dbfbb1c1da9581682') in 0.211290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Game Assets/EffectExamples/Weapon Effects/Textures/GoopSprayAlbedo.tif
+  artifactKey: Guid(3f4abfb4beaba874db09889251c0f146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Weapon Effects/Textures/GoopSprayAlbedo.tif using Guid(3f4abfb4beaba874db09889251c0f146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a84f393da79b877df487d527782de3e7') in 0.152507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Game Assets/EffectExamples/Goop Effects/Textures/GoopDropAlbedo.tif
+  artifactKey: Guid(fd9fde9ce6505d546952963a514b1909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Goop Effects/Textures/GoopDropAlbedo.tif using Guid(fd9fde9ce6505d546952963a514b1909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e941e2a7a13c872a3099ccb273a55cdc') in 0.215473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Game Assets/Enemies/caco_DM.png
+  artifactKey: Guid(05fdc5f33e287954bb9c1f52e87bd74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Enemies/caco_DM.png using Guid(05fdc5f33e287954bb9c1f52e87bd74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7684eed8803044f5d077aa8e5db95752') in 0.276036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Bullet_Holes/BulletHoles_NH.tga
+  artifactKey: Guid(65db27577f5695c4ca05ba10f4e11a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bullet_Holes/BulletHoles_NH.tga using Guid(65db27577f5695c4ca05ba10f4e11a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd945a8a9fbddd9d9931c2e39648d05e') in 0.197883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Game Assets/EffectExamples/Fire & Explosion Effects/Textures/Flame02.tif
+  artifactKey: Guid(838696ee09635f647b630a61fac71a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Fire & Explosion Effects/Textures/Flame02.tif using Guid(838696ee09635f647b630a61fac71a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3275538118a47539c9664b9921259652') in 0.216560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Game Assets/EffectExamples/Magic Effects/Textures/DustPuffSmall.png
+  artifactKey: Guid(a547fca3b7d596c4d9bcb07a747ec5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Magic Effects/Textures/DustPuffSmall.png using Guid(a547fca3b7d596c4d9bcb07a747ec5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ccb8b50d9905df3bfb475cfe18130b3') in 0.169502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Game Assets/EffectExamples/Misc Effects/Textures/FireFlyEmission.tif
+  artifactKey: Guid(f16b4e9769a932a4ba18f3ae2964e3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Misc Effects/Textures/FireFlyEmission.tif using Guid(f16b4e9769a932a4ba18f3ae2964e3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bc6c389ab0fecf04b46f5fd6ec29ce5') in 0.171272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Game Assets/Sci-Fi Weapons/Base Pack/Heavy/Textures/Variation 08/Heavy_08_Emission.png
+  artifactKey: Guid(b2c387679e71b184f9635a7ad5dbaac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Sci-Fi Weapons/Base Pack/Heavy/Textures/Variation 08/Heavy_08_Emission.png using Guid(b2c387679e71b184f9635a7ad5dbaac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3f1eb9098493b73ed5f7c18a83ce7f8') in 0.224904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Game Assets/EffectExamples/Goop Effects/Textures/GoopPoolNormals.tif
+  artifactKey: Guid(969a5ea5264ae2e4cb261f0dfbdb7877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Goop Effects/Textures/GoopPoolNormals.tif using Guid(969a5ea5264ae2e4cb261f0dfbdb7877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '601f99b595587a77a42db440d8c9a9d1') in 0.507196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Game Assets/EffectExamples/Magic Effects/Textures/EarthCrackNormal.tif
+  artifactKey: Guid(8af32bd080d13b44d8045a88019902ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Magic Effects/Textures/EarthCrackNormal.tif using Guid(8af32bd080d13b44d8045a88019902ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04c3883c5952a91998d9c3f01c233324') in 0.292998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Game Assets/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughAlbedo.tif
+  artifactKey: Guid(4dcc91061fcec7d40a6d7c381bf1eabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughAlbedo.tif using Guid(4dcc91061fcec7d40a6d7c381bf1eabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6fd72e5564ce9f903f0b468690cc70b') in 0.241552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Game Assets/EffectExamples/Fire & Explosion Effects/Textures/EnergyEffect.tif
+  artifactKey: Guid(5dd198d85c911d44f8a3f9f9d6b00be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Fire & Explosion Effects/Textures/EnergyEffect.tif using Guid(5dd198d85c911d44f8a3f9f9d6b00be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55cfdaf8acb7d9324f26ad145b980e6c') in 0.520749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Game Assets/EffectExamples/Goop Effects/Textures/GoopDropNormals.tif
+  artifactKey: Guid(e2e48048625d63c41a7219b81562326d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Goop Effects/Textures/GoopDropNormals.tif using Guid(e2e48048625d63c41a7219b81562326d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b407d03dbe057112ab05981afec5903f') in 0.287526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Game Assets/EffectExamples/Fire & Explosion Effects/Textures/FireExplosion.tif
+  artifactKey: Guid(59459fa5f4874d34c8a955afad00260b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Fire & Explosion Effects/Textures/FireExplosion.tif using Guid(59459fa5f4874d34c8a955afad00260b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55ce0c3016327ee84248b0d1d478b87d') in 0.497076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Game Assets/Sci-Fi Weapons/Base Pack/Heavy/Textures/Variation 08/Heavy_08_Albedo.png
+  artifactKey: Guid(e15e164e9940fb34b8a1b9d04840af5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Sci-Fi Weapons/Base Pack/Heavy/Textures/Variation 08/Heavy_08_Albedo.png using Guid(e15e164e9940fb34b8a1b9d04840af5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ac92a972d783ec05cce0be5fa4fd343') in 0.317854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Game Assets/Pickups/Ammo box/textures/ammobox_DefaultMaterial_Metallic.png
+  artifactKey: Guid(4b5acf9aec85dd840a5829401b2306f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Pickups/Ammo box/textures/ammobox_DefaultMaterial_Metallic.png using Guid(4b5acf9aec85dd840a5829401b2306f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcdca3658b4891c78f5d07778da99691') in 0.397142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd05d9f76894beaa2bdf403a8fa961838') in 0.298766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Shared/Environment/Textures/ConcreteWall_Albedo.tif
+  artifactKey: Guid(dd79a67bb902a074da2a53f94862061d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shared/Environment/Textures/ConcreteWall_Albedo.tif using Guid(dd79a67bb902a074da2a53f94862061d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034b6364cf0a25ce0aea21e8c2af421c') in 0.282295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Game Assets/EffectExamples/Weapon Effects/Textures/FleshNormals.tif
+  artifactKey: Guid(82b123d008de09948adc8d1433889121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Weapon Effects/Textures/FleshNormals.tif using Guid(82b123d008de09948adc8d1433889121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f8acfee7fa8e20784fd206b257ba947') in 0.246233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Game Assets/EffectExamples/Goop Effects/Textures/GoopStreamAlbedo.tif
+  artifactKey: Guid(1a55072e908ebe74e962a97efbc17416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Goop Effects/Textures/GoopStreamAlbedo.tif using Guid(1a55072e908ebe74e962a97efbc17416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5f23bc2c1e4ac2f71d2f2edf1b85572') in 0.283413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Game Assets/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughNormal.tif
+  artifactKey: Guid(b284a0bea151ce444957bb92f6b50ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughNormal.tif using Guid(b284a0bea151ce444957bb92f6b50ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06665c1ee750f75f23b4f3851c3da4ef') in 0.293554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Game Assets/EffectExamples/Goop Effects/Textures/GoopPoolAlbedo.tif
+  artifactKey: Guid(b4e688a60e266c340b1f84c510a4c102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Goop Effects/Textures/GoopPoolAlbedo.tif using Guid(b4e688a60e266c340b1f84c510a4c102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f8cff766972304526f2baa65d1c854a') in 0.220441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Game Assets/EffectExamples/Smoke & Steam Effects/Textures/Flame01.tif
+  artifactKey: Guid(e2580e97efd2aa34580ef00fbec9a2d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/EffectExamples/Smoke & Steam Effects/Textures/Flame01.tif using Guid(e2580e97efd2aa34580ef00fbec9a2d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2bb8a9f6394579e758765e1de1a8b59') in 0.413771 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

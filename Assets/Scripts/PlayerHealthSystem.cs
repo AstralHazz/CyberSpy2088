@@ -36,4 +36,15 @@ public class PlayerHealthSystem : MonoBehaviour
             FindObjectOfType<GameManager>().PlayerRespawn();
         }
     }
+
+    public void HealPlayer(int healFactor)
+    {
+        currentHealth += healFactor;
+        if(currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+            healthBar.SetHealth(maxHealth);
+        }
+        healthBar.SetHealth(currentHealth);
+    }
 }
