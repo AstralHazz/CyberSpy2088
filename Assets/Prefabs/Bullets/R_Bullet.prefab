@@ -30,6 +30,7 @@ Transform:
   m_LocalRotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: -0.0003264844, y: 0.02235511, z: 0.3411191}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -53,6 +54,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -114,3 +116,6 @@ MonoBehaviour:
   speed: 150
   bulletLife: 2
   myRigidBody: {fileID: 5383882179129926890}
+  explosionEffect: {fileID: 1574300219947779483, guid: e2ef5d9541f92614b98e5a00c0ef455c,
+    type: 3}
+  rocket: 1
