@@ -186,6 +186,14 @@ public class GunSystem : MonoBehaviour
                         Instantiate(explosion, hit.point, Quaternion.LookRotation(hit.normal));
                     }
                 }
+                else if (hit.collider.CompareTag("Enemy") && rocketLauncher)
+                {
+                    hit.collider.GetComponent<EnemyHealthSystem>().TakeDamage(damageAmount);
+                    if (hit.collider.GetComponent<EnemyHealthSystem>().currentHealth <= 0)
+                    {
+                        Instantiate(explosion, hit.point, Quaternion.LookRotation(hit.normal));
+                    }
+                }
             }
             else
             {

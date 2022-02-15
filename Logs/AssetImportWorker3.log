@@ -1740,3 +1740,31 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4388.365095 seconds.
+  path: Assets/Audio/SFX/SFX from Unity/Enemy Blood.wav
+  artifactKey: Guid(0e9a45adbbe1a6644bf35a2e615b1e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/SFX from Unity/Enemy Blood.wav using Guid(0e9a45adbbe1a6644bf35a2e615b1e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63b44a1eda25b067e9216a63bf1c4ad4') in 0.361850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Audio/SFX/SFX from Unity/Walking.wav
+  artifactKey: Guid(7cc8745afc2e8594fbff15f7bf8329ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/SFX from Unity/Walking.wav using Guid(7cc8745afc2e8594fbff15f7bf8329ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fc0cd61d2c699c23ac805d499ebcf42') in 0.144324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Audio/SFX/SFX from Unity/Sniper Shot.mp3
+  artifactKey: Guid(15929293212ff0c48a146b5d967ec02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/SFX from Unity/Sniper Shot.mp3 using Guid(15929293212ff0c48a146b5d967ec02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24775a60b8f1fb5040ccad80c47d7085') in 0.148743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Audio/SFX/SFX from Unity/Rifle Shot.mp3
+  artifactKey: Guid(e67b5456e1a98a84a9df6bce019fc4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/SFX/SFX from Unity/Rifle Shot.mp3 using Guid(e67b5456e1a98a84a9df6bce019fc4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2da8c7f3389c1c15b68678d22fbb0fd') in 0.140379 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
