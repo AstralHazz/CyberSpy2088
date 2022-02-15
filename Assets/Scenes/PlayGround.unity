@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 136279882}
   - component: {fileID: 136279881}
   - component: {fileID: 136279880}
+  - component: {fileID: 136279883}
   m_Layer: 0
   m_Name: Weapons Pickup
   m_TagString: Untagged
@@ -175,7 +176,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136279879}
   m_LocalRotation: {x: -0.20039226, y: 0.6401419, z: 0.17818198, w: 0.7199393}
-  m_LocalPosition: {x: -0.029427528, y: 1.45, z: 12.641676}
+  m_LocalPosition: {x: -0.02942753, y: 1.45, z: 12.64168}
   m_LocalScale: {x: 1.16, y: 1.16, z: 1.16}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -183,6 +184,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -31.109, y: 83.284, z: 0}
+--- !u!95 &136279883
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136279879}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 50854adbee39dac4d8f44fa223b71671, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &150939469
 GameObject:
   m_ObjectHideFlags: 0
@@ -3458,6 +3479,7 @@ GameObject:
   - component: {fileID: 1431543820}
   - component: {fileID: 1431543819}
   - component: {fileID: 1431543821}
+  - component: {fileID: 1431543822}
   m_Layer: 0
   m_Name: Ammo Pickup
   m_TagString: Untagged
@@ -3506,6 +3528,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1606144778d0494aa457f27ffbcac57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1431543822
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431543818}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd9932075743d0e4fadbcac7286bfa09, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1433416137
 GameObject:
   m_ObjectHideFlags: 0
@@ -3913,6 +3955,7 @@ GameObject:
   - component: {fileID: 1623246456}
   - component: {fileID: 1623246455}
   - component: {fileID: 1623246454}
+  - component: {fileID: 1623246457}
   m_Layer: 0
   m_Name: Health Pickup
   m_TagString: Untagged
@@ -3962,6 +4005,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1623246457
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623246453}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b9c26ebe9cf1ef040918c6696f85535f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1625134968
 GameObject:
   m_ObjectHideFlags: 0
