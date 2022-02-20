@@ -37,6 +37,9 @@ public class Player : MonoBehaviour
     public float currentSlideTimer, maxSlideTime = 2f;
     public float slideSpeed = 10f;
 
+    //hookshot
+    public Transform hitPointTransform;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +54,7 @@ public class Player : MonoBehaviour
         Jump();
         Crouching();
         SlideCounter();
+        HandleHookShotStart();
     }
 
     private void Crouching()
@@ -166,6 +170,19 @@ public class Player : MonoBehaviour
         if(startSliderTimer)
         {
             currentSlideTimer += Time.deltaTime;
+        }
+    }
+
+    private void HandleHookShotStart()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            RaycastHit hit;
+
+            if (Physics.Raycast(myCameraHead.position, myCameraHead.forward, out hit))
+            {
+                hitPointTransform.position = hit.point;
+            }
         }
     }
 }
