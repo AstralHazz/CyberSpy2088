@@ -39,22 +39,45 @@ public class Player : MonoBehaviour
 
     //hookshot
     public Transform hitPointTransform;
+    private Vector3 hookShotPosition;
+    public float hookShotSpeed = 5f;
+    private Vector3 flyingCharacterMomentum;
+
+    //player states
+    private State state;
+    private enum State { Normal, HookFlyingPlayer }
 
     // Start is called before the first frame update
     void Start()
     {
         bodyScale = myBody.localScale;
         initialControllerHeight = myController.height;
+
+        state = State.Normal;
     }
 
     // Update is called once per frame
     void Update()
     {
-        PlayerMovement();
-        Jump();
-        Crouching();
-        SlideCounter();
-        HandleHookShotStart();
+        switch (state)
+        {
+            case State.Normal:
+                PlayerMovement();
+                CameraMovement();
+                Jump();
+                Crouching();
+                SlideCounter();
+                HandleHookShotStart();
+                break;
+
+            case State.HookFlyingPlayer:
+                CameraMovement();
+                HandleHookShotMovement();
+                break;
+
+            default:
+                break;
+        }
     }
 
     private void Crouching()
@@ -109,8 +132,8 @@ public class Player : MonoBehaviour
     {
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
-        float mouseX = Input.GetAxisRaw("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxisRaw("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        /*float mouseX = Input.GetAxisRaw("Mouse X") * mouseSensitivity * Time.deltaTime;
+        float mouseY = Input.GetAxisRaw("Mouse Y") * mouseSensitivity * Time.deltaTime;*/
 
         Vector3 movement = x * transform.right + z * transform.forward;
 
@@ -127,13 +150,14 @@ public class Player : MonoBehaviour
             isRunning = false;
         }
 
-        cameraVerticalRotation -= mouseY;
+        /*cameraVerticalRotation -= mouseY;
         cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 90f);
 
         transform.Rotate(Vector3.up * mouseX);
-        myCameraHead.localRotation = Quaternion.Euler(cameraVerticalRotation, 0f, 0f);
+        myCameraHead.localRotation = Quaternion.Euler(cameraVerticalRotation, 0f, 0f);*/
 
         //myAnimator.SetFloat("PlayerSpeed", movement.magnitude);
+        movement += flyingCharacterMomentum * Time.deltaTime;
 
         if (movement.magnitude > 0 && movement.magnitude < sprintSpeed)
         {
@@ -163,6 +187,30 @@ public class Player : MonoBehaviour
         {
             velocity.y = Physics.gravity.y * Time.deltaTime;
         }
+
+        if(flyingCharacterMomentum.magnitude > 0f)
+        {
+            float reductionAmount = 3f;
+            flyingCharacterMomentum -= flyingCharacterMomentum * reductionAmount * Time.deltaTime;
+
+            if (flyingCharacterMomentum.magnitude < 4f)
+                    flyingCharacterMomentum = Vector3.zero;
+        }
+        {
+
+        }
+    }
+
+    private void CameraMovement()
+    {
+        float mouseX = Input.GetAxisRaw("Mouse X") * mouseSensitivity * Time.deltaTime;
+        float mouseY = Input.GetAxisRaw("Mouse Y") * mouseSensitivity * Time.deltaTime;
+
+        cameraVerticalRotation -= mouseY;
+        cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 90f);
+
+        transform.Rotate(Vector3.up * mouseX);
+        myCameraHead.localRotation = Quaternion.Euler(cameraVerticalRotation, 0f, 0f);
     }
 
     private void SlideCounter()
@@ -177,12 +225,49 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            //sends ray out to check if hitting something
             RaycastHit hit;
 
             if (Physics.Raycast(myCameraHead.position, myCameraHead.forward, out hit))
             {
+                //when hit something, attatch it to the variables and change to proper "state"
                 hitPointTransform.position = hit.point;
+                hookShotPosition = hit.point;
+                state = State.HookFlyingPlayer;
             }
         }
+    }
+
+    private bool TestHookStop()
+    {
+        return Input.GetKey(KeyCode.Space);
+    }
+    
+    private void HandleHookShotMovement()
+    {
+        //direction of movement
+        Vector3 hookShotDirection = (hookShotPosition - transform.position).normalized;
+
+        float hookShotSpeedMin = 10f, hookShotSpeedMax = 20f;
+
+        float hookShotSpeedMod = Mathf.Clamp(Vector3.Distance(transform.position, hookShotPosition), hookShotSpeedMin, hookShotSpeedMax);
+
+        myController.Move(hookShotDirection * hookShotSpeed * hookShotSpeedMod * Time.deltaTime);
+
+        if (Vector3.Distance(transform.position, hookShotPosition) < 2f)
+            state = State.Normal;
+
+        if (TestHookStop())
+        {
+            float extraMomentum = 30f, jumpSpeedUp = 100f;
+            flyingCharacterMomentum += hookShotDirection * hookShotSpeed * extraMomentum;
+            flyingCharacterMomentum += Vector3.up * jumpSpeedUp;
+            state = State.Normal;
+        }
+    }
+
+    private void ResetGravity()
+    {
+        velocity.y = 0f;
     }
 }
