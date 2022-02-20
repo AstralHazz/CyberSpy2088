@@ -75,13 +75,13 @@ MonoBehaviour:
   destinationPoint: {x: 0, y: 0, z: 0}
   destinationRange: 1000.02
   chaseRange: 34.45
-  attackRange: 5.18
+  attackRange: 7
   attackProjectile: {fileID: 8643139112905823209, guid: 853c6b835105d264ca471acb7e5a3342,
     type: 3}
   readyToFire: 1
   timeBetweenShots: 1
   isMeleeAttacker: 1
-  meleeDamageAMT: 4
+  meleeDamageAMT: 6
 --- !u!195 &25651844389934035
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2362,6 +2362,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1

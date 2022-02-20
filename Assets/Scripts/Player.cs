@@ -38,6 +38,7 @@ public class Player : MonoBehaviour
     public float slideSpeed = 10f;
 
     //hookshot
+    public float HSDistanceTest = 75f;
     public Transform hitPointTransform;
     private Vector3 hookShotPosition;
     public float hookShotSpeed = 5f;
@@ -240,13 +241,16 @@ public class Player : MonoBehaviour
 
             if (Physics.Raycast(myCameraHead.position, myCameraHead.forward, out hit))
             {
-                //when hit something, attatch it to the variables and change to proper "state"
                 hitPointTransform.position = hit.point;
                 hookShotPosition = hit.point;
+                if (Vector3.Distance(transform.position, hookShotPosition) <= HSDistanceTest)
+                {
+                    AudioManager.instance.PlayerSFX(5);
 
-                hookShotSize = 0f;
-                grappleHook.gameObject.SetActive(true);
-                state = State.HookShotThrow;
+                    hookShotSize = 0f;
+                    grappleHook.gameObject.SetActive(true);
+                    state = State.HookShotThrow;
+                }
             }
         }
     }
@@ -260,7 +264,7 @@ public class Player : MonoBehaviour
     {
         grappleHook.LookAt(hookShotPosition);
 
-        float hookShotThrowSpeed = 70f;
+        float hookShotThrowSpeed = 400f;
         hookShotSize += hookShotThrowSpeed * Time.deltaTime;
         grappleHook.localScale = new Vector3(1, 1, hookShotSize);
 
@@ -293,7 +297,7 @@ public class Player : MonoBehaviour
 
         if (TestHookStop())
         {
-            float extraMomentum = 30f, jumpSpeedUp = 100f;
+            float extraMomentum = 30f, jumpSpeedUp = 90f;
             flyingCharacterMomentum += hookShotDirection * hookShotSpeed * extraMomentum;
             flyingCharacterMomentum += Vector3.up * jumpSpeedUp;
             StopHookShot();
