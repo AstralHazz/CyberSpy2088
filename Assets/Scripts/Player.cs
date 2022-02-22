@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public float speed = 12.5f, runSpeed = 13;
     public CharacterController myController;
     public float mouseSensitivity = 100f;
+    UICanvasController mouseBar;
     public Transform myCameraHead;
     public Animator myAnimator;
     private float cameraVerticalRotation;
@@ -59,6 +60,8 @@ public class Player : MonoBehaviour
 
         state = State.Normal;
         grappleHook.gameObject.SetActive(false);
+
+        mouseBar = FindObjectOfType<UICanvasController>();
     }
 
     // Update is called once per frame
@@ -222,6 +225,11 @@ public class Player : MonoBehaviour
 
         transform.Rotate(Vector3.up * mouseX);
         myCameraHead.localRotation = Quaternion.Euler(cameraVerticalRotation, 0f, 0f);
+    }
+
+    public void AdjustSensitivity()
+    {
+        mouseSensitivity = mouseBar.mouseSlider.value;
     }
 
     private void SlideCounter()

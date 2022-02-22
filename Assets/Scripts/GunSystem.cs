@@ -203,6 +203,8 @@ public class GunSystem : MonoBehaviour
                 firePosition.LookAt(myCameraHead.position + (myCameraHead.forward * 50f));
             }
             bulletsAvailable--;
+            if (bulletsAvailable <= 0)
+                Reload();
 
             if (!rocketLauncher)
             {

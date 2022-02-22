@@ -10,6 +10,7 @@ public class UICanvasController : MonoBehaviour
     public TextMeshProUGUI totalAmmoText;
 
     public Slider healthSlider;
+    public Slider mouseSlider;
 
     // Start is called before the first frame update
     void Start()
