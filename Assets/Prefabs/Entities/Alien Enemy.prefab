@@ -81,7 +81,7 @@ MonoBehaviour:
   readyToFire: 1
   timeBetweenShots: 1
   isMeleeAttacker: 1
-  meleeDamageAMT: 6
+  meleeDamageAMT: 3
 --- !u!195 &25651844389934035
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -299,13 +299,16 @@ public class Player : MonoBehaviour
 
         if (Vector3.Distance(transform.position, hookShotPosition) < 2f)
         {
+            float extraMomentum = 15f, jumpSpeedUp = 50f;
+            flyingCharacterMomentum += hookShotDirection * hookShotSpeed * extraMomentum;
+            flyingCharacterMomentum += Vector3.up * jumpSpeedUp;
             StopHookShot();
         }
         
 
         if (TestHookStop())
         {
-            float extraMomentum = 30f, jumpSpeedUp = 90f;
+            float extraMomentum = 25f, jumpSpeedUp = 70f;
             flyingCharacterMomentum += hookShotDirection * hookShotSpeed * extraMomentum;
             flyingCharacterMomentum += Vector3.up * jumpSpeedUp;
             StopHookShot();

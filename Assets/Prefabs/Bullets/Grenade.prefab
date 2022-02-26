@@ -229,7 +229,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.71
+  m_Radius: 2.09
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &4086119660039418172
 Rigidbody:
@@ -370,7 +370,7 @@ MonoBehaviour:
   upForce: 3
   forwardForce: 100
   grenadeLife: 4
-  amountOfDamage: 5
+  amountOfDamage: 4
   detonationEffect: {fileID: 1121192042590650, guid: 2ce7ffc0c17fc414d92721d76c15b085,
     type: 3}
 --- !u!82 &8599369092633283877
