@@ -109,7 +109,7 @@ public class Player : MonoBehaviour
         myController.height /= 2;
         isCrouching = true;
 
-        if(isRunning)
+        if (isRunning)
         {
             velocity = Vector3.ProjectOnPlane(myCameraHead.transform.forward, Vector3.up).normalized * slideSpeed * Time.deltaTime;
             startSliderTimer = true;
@@ -131,7 +131,7 @@ public class Player : MonoBehaviour
     {
         readyToJump = Physics.OverlapSphere(ground.position, groundDist, groundLayer).Length > 0;
 
-        if(Input.GetButtonDown("Jump") && readyToJump)
+        if (Input.GetButtonDown("Jump") && readyToJump)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * Physics.gravity.y) * Time.deltaTime;
             AudioManager.instance.PlayerSFX(2);
@@ -151,12 +151,12 @@ public class Player : MonoBehaviour
 
         Vector3 movement = x * transform.right + z * transform.forward;
 
-        if(Input.GetKey(KeyCode.LeftShift) && !isCrouching)
+        if (Input.GetKey(KeyCode.LeftShift) && !isCrouching)
         {
             movement = movement * runSpeed * Time.deltaTime;
             isRunning = true;
         }
-        else if(isCrouching)
+        else if (isCrouching)
             movement = movement * crouchSpeed * Time.deltaTime;
         else
         {
@@ -166,7 +166,6 @@ public class Player : MonoBehaviour
 
         /*cameraVerticalRotation -= mouseY;
         cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 90f);
-
         transform.Rotate(Vector3.up * mouseX);
         myCameraHead.localRotation = Quaternion.Euler(cameraVerticalRotation, 0f, 0f);*/
 
@@ -178,7 +177,7 @@ public class Player : MonoBehaviour
             myAnimator.SetBool("Walking", true);
             myAnimator.SetBool("Sprinting", false);
         }
-        else if(movement.magnitude > sprintSpeed)
+        else if (movement.magnitude > sprintSpeed)
         {
             myAnimator.SetBool("Walking", false);
             myAnimator.SetBool("Sprinting", true);
@@ -189,7 +188,7 @@ public class Player : MonoBehaviour
             myAnimator.SetBool("Sprinting", false);
         }
 
-        
+
 
         myController.Move(movement);
 
@@ -202,13 +201,13 @@ public class Player : MonoBehaviour
             velocity.y = Physics.gravity.y * Time.deltaTime;
         }
 
-        if(flyingCharacterMomentum.magnitude > 0f)
+        if (flyingCharacterMomentum.magnitude > 0f)
         {
             float reductionAmount = 3f;
             flyingCharacterMomentum -= flyingCharacterMomentum * reductionAmount * Time.deltaTime;
 
             if (flyingCharacterMomentum.magnitude < 4f)
-                    flyingCharacterMomentum = Vector3.zero;
+                flyingCharacterMomentum = Vector3.zero;
         }
         {
 
@@ -234,7 +233,7 @@ public class Player : MonoBehaviour
 
     private void SlideCounter()
     {
-        if(startSliderTimer)
+        if (startSliderTimer)
         {
             currentSlideTimer += Time.deltaTime;
         }
@@ -267,7 +266,7 @@ public class Player : MonoBehaviour
     {
         return Input.GetKey(KeyCode.Space);
     }
-    
+
     private void ThrowHook()
     {
         grappleHook.LookAt(hookShotPosition);
@@ -299,13 +298,16 @@ public class Player : MonoBehaviour
 
         if (Vector3.Distance(transform.position, hookShotPosition) < 2f)
         {
+            float extraMomentum = 15f, jumpSpeedUp = 50f;
+            flyingCharacterMomentum += hookShotDirection * hookShotSpeed * extraMomentum;
+            flyingCharacterMomentum += Vector3.up * jumpSpeedUp;
             StopHookShot();
         }
-        
+
 
         if (TestHookStop())
         {
-            float extraMomentum = 30f, jumpSpeedUp = 90f;
+            float extraMomentum = 25f, jumpSpeedUp = 70f;
             flyingCharacterMomentum += hookShotDirection * hookShotSpeed * extraMomentum;
             flyingCharacterMomentum += Vector3.up * jumpSpeedUp;
             StopHookShot();
