@@ -18,7 +18,7 @@ public class WeaponSwitchSystem : MonoBehaviour
             gun.gameObject.SetActive(false);
         }
 
-        activeGun = allGuns[currentGunNumber];
+        activeGun = allGuns[currentGunNumber + 1];
         activeGun.gameObject.SetActive(true);
     }
 
@@ -27,6 +27,8 @@ public class WeaponSwitchSystem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
+            Light myLight = FindObjectOfType<Player>().GetComponentInChildren<Light>();
+            myLight.intensity = 1.5f;
             SwitchGun();
         }
     }

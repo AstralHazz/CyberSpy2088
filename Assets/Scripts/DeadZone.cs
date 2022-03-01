@@ -8,7 +8,7 @@ public class DeadZone : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<PlayerHealthSystem>().TakeDamage(200);
+            other.GetComponentInChildren<PlayerHealthSystem>().TakeDamage(200);
         }
     }
 }

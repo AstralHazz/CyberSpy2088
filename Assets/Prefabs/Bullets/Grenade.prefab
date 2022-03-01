@@ -367,8 +367,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33461917cfa6894b8ef8907ece64449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upForce: 3
-  forwardForce: 100
+  upForce: 5
+  forwardForce: 90
   grenadeLife: 4
   amountOfDamage: 4
   detonationEffect: {fileID: 1121192042590650, guid: 2ce7ffc0c17fc414d92721d76c15b085,

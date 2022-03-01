@@ -33,12 +33,12 @@ public class PlayerHealthSystem : MonoBehaviour
         {
             AudioManager.instance.PlayerSFX(3);
 
+            FindObjectOfType<GameManager>().PlayerRespawn();
             gameObject.SetActive(false);
 
             AudioManager.instance.StopBackgroundMusic();
 
             Instantiate(deathEffect, transform.position, transform.localRotation);
-            FindObjectOfType<GameManager>().PlayerRespawn();
         }
 
         AudioManager.instance.PlayerSFX(4);

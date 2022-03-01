@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     public AudioSource BGM;
+    public AudioSource BGM2;
 
     public AudioSource[] SFXs;
 
@@ -27,5 +28,6 @@ public class AudioManager : MonoBehaviour
     public void StopBackgroundMusic()
     {
         BGM.Stop();
+        BGM2.Stop();
     }
 }
