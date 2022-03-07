@@ -212,7 +212,7 @@ Transform:
   m_GameObject: {fileID: 8643139112905823209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9188252, y: 0.9188252, z: 0.9188252}
   m_Children:
   - {fileID: 6875624203134091080}
   m_Father: {fileID: 0}
@@ -229,7 +229,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.09
+  m_Radius: 0.56
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &4086119660039418172
 Rigidbody:
@@ -367,7 +367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33461917cfa6894b8ef8907ece64449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upForce: 5
+  upForce: 4
   forwardForce: 90
   grenadeLife: 4
   amountOfDamage: 4

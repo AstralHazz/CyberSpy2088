@@ -13667,11 +13667,11 @@ MonoBehaviour:
   destinationPoint: {x: 0, y: 0, z: 0}
   destinationRange: 1000
   chaseRange: 146.5
-  attackRange: 60
+  attackRange: 70
   attackProjectile: {fileID: 8643139112905823209, guid: 853c6b835105d264ca471acb7e5a3342,
     type: 3}
   readyToFire: 1
-  timeBetweenShots: 4
+  timeBetweenShots: 3
   isMeleeAttacker: 0
   meleeDamageAMT: 2
 --- !u!95 &377517538811135531
